@@ -55,4 +55,7 @@ gem 'devise'
 gem 'active_model_serializers', '~> 0.10.0'
 
 #used for documentation
-gem 'apipie-rails'
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
